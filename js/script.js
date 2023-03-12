@@ -63,7 +63,10 @@ button.addEventListener('click', () => {
 
 for (const option of options) {
     option.addEventListener('click', ()=> {
-        rounds += 1;
+        if (rounds !== 3){
+            rounds += 1;
+        }
+        
         game(option);
     })
 }
