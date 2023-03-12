@@ -4,9 +4,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body {
+/* body {
     
-}
+} */
 
 
 #container {
@@ -51,7 +51,7 @@ h1 {/*Head Text */
     text-align: center;
 }
 
-p {
+.startText {
     position: relative;
     font-size: 20px;
     margin: 100px auto 0 auto;
@@ -70,14 +70,72 @@ button {
     font-weight: 400;
     font-size: 20px;
     letter-spacing: 0.015em;
-    transition: 0.6s ease;
+    transition: 0.5s ease;
     color: #FFFFFF;
 }
 
 button:hover {
     background-color: #44b1e1;
+    transform: scale(1.04);
 }
 
 .hide {
     display: none;
+}
+
+
+
+/* Applies to the dynamic css for the site */
+
+.leaderscore {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin: 12px;
+}
+
+span {
+    margin-left: 1px;
+    letter-spacing: 3px;
+    background-color: #CEB5B5;
+    border: 2px solid #bba3a3;
+    padding: 1px 4px;
+    border-radius: 5px;
+}
+
+
+
+/* Choose your pick: */
+h2 {
+    
+    margin-top: 40px;
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 126.4%;
+    color: #000000;
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.btn-game {
+    width: 140px;
+    height: 95px;
+    transition: 0.5s ease;
+    background: #D3BDBD;
+    border: 1px solid #C49C9C;
+    border-radius: 13px;
+
+}
+
+.btn-game:hover {
+    background-color: #dccaca;
+    transform: scale(1.04);
 }
