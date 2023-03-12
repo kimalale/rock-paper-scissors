@@ -73,10 +73,10 @@ for (const option of options) {
 function game(id){
 
     
-
+    round.innerHTML = `Round: <span>${rounds}/3</span>`;
     if (rounds < 3 ){
         result = playRound(id.getAttribute('id'), getComputerChoice());
-        round.innerHTML = `Round: <span>${rounds}/3</span>`;
+        
         textHeading.textContent = result;
         if ((result.includes("tie"))) {
             rounds -= 1;
