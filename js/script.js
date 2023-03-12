@@ -1,3 +1,23 @@
+//Listen for play click
+const button = document.querySelector('button');
+const view = document.querySelector('.main-view');
+
+button.addEventListener('click', () => {
+    
+    while (view.children.length != 0) {
+        view.removeChild(view.children[0]);
+    } 
+})
+
+
+
+
+
+
+
+//can you use a for loop on a click event javascript
+
+
 function getComputerChoice(){
     
     let choice = ["Rock", "Paper", "Scissors"]
@@ -61,4 +81,4 @@ function game(){
 
 
 
-game();
+//game();
